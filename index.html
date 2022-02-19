@@ -5,34 +5,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800;900&family=Open+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style/main.css">
-    <script src="js/script.js"></script>
-
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Burgers</title>
 </head>
 
 <body>
-    <div class="main">
+    <main class="main">
         <div class="container">
             <div class="text">
-                <span>работаем с 11:00 до 22:00</span>
-                <h1>Лучшие бургеры</h1>
-                <p>Закажи наши фирменные бургеры или собери что-то своё,
-                    а&nbsp;наши курьеры доставят за&nbsp;30&nbsp;минут</p>
-                <a href="#">заказать</a>
-            </div>
-            <div class="visual">
-                <div class="bg">
-                    <img src="img/fresh-tasty-burger.png" alt="Burger">
+                <div class="text__content">
+                    <span class="title__caption">работаем с 11:00 до 22:00</span>
+                    <h1 class="title__header">лучшие бургеры</h1>
+                    <p class="title__text">Закажи наши фирменные бургеры или собери что-то своё, а&nbsp;наши курьеры
+                        доставят за&nbsp;30&nbsp;минут
+                    </p>
+                    <a class="title__link button" href="#">Заказать</a>
                 </div>
             </div>
+            <div class="visual">
+                <img class="main__bg-image" src="img/fresh-tasty-burger.png" alt="Картинка бургера">
+            </div>
         </div>
-    </div>
+    </main>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__content">
+                <div class="promo__card">
+                    <div class="left-promo">
+                        <p class="left-promo__sale">Скидка</p>
+                        <p class="left-promo__discount">-20%</p>
+                        <p class="left-promo__text description">При заказе на 3х и более персон мы делаем скидки, а
+                            также предоставляем скидки именинникам</p>
+                        <!-- <img src="img/burger.jpg" alt="burger"> -->
+                    </div>
+                </div>
+                <div class="promo__card">
+                    <div class="right-promo">
+                        <p class="right-promo__title">Бесплатно</p>
+                        <p class="right-promo__text description">При заказе на сумму 500 рублей и более - доставляем
+                            бесплатно</p>
+                        <a href="#" class="right-promo__link button">Заказать</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+
+                <a href="#"><img src="img/Icon.svg" alt="Logo"></a>
+
+                <div class="footer__column footer-links">
+                    <h2 class="footer__title">Основные ссылки</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="" class="footer__link">Меню</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Заказ и Доставка</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Методы оплаты</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column footer-contacts">
+                    <h2 class="footer__title">Основная информация</h2>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            Время <br>
+                            <span>ПН - ВС <br>
+                                11:00 - 22:00 без перерывов</span>
+                        </li>
+                        <li class="footer__item">
+                            Адрес <br>
+                            <span>Москва, ул. Тверская, 5, вход со двора</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="footer__column footer-tel">
+                    <ul>
+                        <li type="tel">+ 7 900 787 13-13</li>
+                        <li type="tel">+ 7 900 700 14-14</li>
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
